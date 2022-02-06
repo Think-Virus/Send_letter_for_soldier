@@ -139,3 +139,7 @@ cython_debug/
 
 .idea
 *.secret
+
+# 계정 정보
+thecampy_pw.txt
+secret_key.txt
