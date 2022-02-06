@@ -82,3 +82,12 @@ div.box {
     padding: 10px;
     margin: 17px 10px;
 }
+
+dic.check_text{
+    width: 95%;
+    max-width: 1000px;
+    height: 300px;
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+}

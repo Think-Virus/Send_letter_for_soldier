@@ -1,8 +1,8 @@
 import thecampy
 
-soldier = thecampy.Soldier('현재익', 2000_03_14, 2021_03_29, '육군훈련소')
-user_id = 'jake.hyun@hotmail.com'
-with open('thecampy_pw.secret', 'r') as f:
+soldier = thecampy.Soldier('박해영', 2000_09_03, 2022_01_17, '12사단')
+user_id = 'chunccc1004@naver.com'
+with open('C:\\Users\\user\\PycharmProjects\\the_camp_api_test\\soldier-link\\writer\\thecampy_pw.txt', 'r') as f:
     user_pw = f.read().strip()
 
 

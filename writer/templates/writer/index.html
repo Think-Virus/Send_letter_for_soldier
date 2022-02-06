@@ -2,6 +2,8 @@
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/global_style.css' %}">
 <body>
+    <script src="{% static 'js/check_length.js' %}"></script>
+
     <div class="box">
         <a href="/"><button class="backButton">홈으로</button></a>
         <h1>| 인편 쓰기 |</h1>
@@ -18,7 +20,12 @@
         <textarea class="subjectBox" type="text" name="subject">{{ title }}</textarea><br>
 
         <h2>내용 (1500자, 25문단 이내)</h2>
-        <textarea class="c" type="text" name="content">{{ content }}</textarea><br>
+        <div>
+            <p class="textCount" id="text_length" style="display: inline">0자</p>
+            <p class="textTotal" style="display: inline"> / 1500자</p>
+            <br>
+            <textarea class="c" type="text" id="text_box" name="content" maxlength="1500" placeholder="편지 내용을 입력해주세요!">{{ content }}</textarea><br>
+        </div>
 
         <br>
         <button class="submitButton" type="submit">보내기!</button>
@@ -27,9 +34,9 @@
         {% if error %}<p style="color:red"><strong>{{ error }}</strong></p>{% endif %}
 
         <footer>
-            Soldier-Link by Syphon
+            Soldier-Link by 최명균
             <br>
-            Credits to
+            Reference
             <a href="https://calofmijuck.tistory.com/18" target="_blank">zxcvber</a> for inspiration.
             <br>
             <br>

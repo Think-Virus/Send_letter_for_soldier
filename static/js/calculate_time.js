@@ -35,7 +35,7 @@ function showRemainingTime() {
     document.getElementById("RemainingTime").innerText = result;
     document.getElementById("RemainingTime").textContent = result;
 
-    setTimeout(showRemainingTime, 1000);
+    // setTimeout(showRemainingTime, 1000);
 }
 
 function getPercentage() {
@@ -47,7 +47,7 @@ function getPercentage() {
     var result = percentage + ' %';
     document.getElementById("TimePercentage").innerText = result;
     document.getElementById("TimePercentage").textContent = result;
-    setTimeout(getPercentage, 100);
+    // setTimeout(getPercentage, 100);
 }
 
 

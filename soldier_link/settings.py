@@ -20,13 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-with open('secret_key.secret', 'r') as f:
+with open('C:\\Users\\user\\PycharmProjects\\the_camp_api_test\\soldier-link\\soldier_link\\secret_key.txt', 'r') as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '54.180.144.73', 'ec2-54-180-144-73.ap-northeast-2.compute.amazonaws.com']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
